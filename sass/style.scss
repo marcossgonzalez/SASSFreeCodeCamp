@@ -1,0 +1,10 @@
+//Em JavaScript, as variáveis ​​são definidas usando as palavras-chave let e const.
+//No Sass, as variáveis ​​começam com $ seguido do nome da variável.
+    
+    $text-color: red;
+    .header{
+      text-align: center;
+    }
+    .blog-post, h2 {
+      color: $text-color;
+    }
