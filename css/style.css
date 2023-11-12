@@ -1,9 +1,35 @@
-.blog-post h1 {
-  text-align: center;
-  color: blue;
+@charset "UTF-8";
+/*.blog-post {
+ h1 {
+   text-align: center;
+   color: blue;
+ }
+ p {
+   font-size: 20px;
+ }
+}*/
+#awesome {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
 }
-.blog-post p {
-  font-size: 20px;
+
+/*
+@mixin box-shadow($x, $y, $blur, $c){ 
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
 }
+
+A definição começa com @mixin seguido por um nome personalizado. Os parâmetros 
+($x, $y, $blur e $c no exemplo acima) são opcionais. Agora, sempre que uma regra 
+box-shadow for necessária, apenas uma única linha chamando o mixin substitui a 
+necessidade de digitar todos os prefixos do fornecedor. Um mixin é chamado com 
+a diretiva @include:*/
 
 /*# sourceMappingURL=style.css.map */
