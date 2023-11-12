@@ -1,9 +1,9 @@
-.header {
+.blog-post h1 {
   text-align: center;
+  color: blue;
 }
-
-.blog-post, h2 {
-  color: red;
+.blog-post p {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
