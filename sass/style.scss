@@ -18,7 +18,7 @@
       font-size: 20px;
     }
    }*/
-   @mixin border-radius($radius){
+   /*@mixin border-radius($radius){
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
@@ -29,7 +29,7 @@
     height: 150px;
     background-color: green;
     @include border-radius(15px);
-  }
+  }*/
 /*
 @mixin box-shadow($x, $y, $blur, $c){ 
   -webkit-box-shadow: $x $y $blur $c;
@@ -44,3 +44,48 @@ box-shadow for necessária, apenas uma única linha chamando o mixin substitui a
 necessidade de digitar todos os prefixos do fornecedor. Um mixin é chamado com 
 a diretiva @include:*/
   
+/*A diretiva @if no Sass é útil para testar um caso específico - funciona exatamente como a instrução if em JavaScript.
+
+@mixin make-bold($bool) {
+  @if $bool == true {
+    font-weight: bold;
+  }
+}
+E assim como no JavaScript, as diretivas @else if e @else testam mais condições:
+
+@mixin text-effect($val) {
+  @if $val == danger {
+    color: red;
+  }
+  @else if $val == alert {
+    color: yellow;
+  }
+  @else if $val == success {
+    color: green;
+  }
+  @else {
+    color: black;
+  }
+}*/
+
+@mixin border-stroke($val){
+  @if $val == light{
+    border: 1px solid black;
+  }
+  @else if $val == medium{
+    border: 3px solid black;
+  }
+  @else if $val == heavy{
+    border: 6px solid black;
+  }
+  @else {
+    border: none;
+  }
+} 
+
+#box{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  @include border-stroke(medium);
+}
