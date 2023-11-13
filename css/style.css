@@ -79,6 +79,31 @@ E assim como no JavaScript, as diretivas @else if e @else testam mais condiçõe
 }*/
 /*
 @for é usado de duas maneiras: "do início ao fim" ou "do início ao fim". A principal diferença é 
-que “do início ao fim” exclui o número final como parte da contagem, e “do início ao fim” inclui o número final como parte da contagem.*/
+que “do início até o fim” exclui o número final como parte da contagem, e “do início ao fim” inclui o 
+número final como parte da contagem.
+Por exemplo:
+@for $i from 1 through 12 {
+  }
+} Aqui temos um código que conta do número 1 até o 12 ( incluso) 
+*/
+.text-1 {
+  font-size: 15;
+}
+
+.text-2 {
+  font-size: 30;
+}
+
+.text-3 {
+  font-size: 45;
+}
+
+.text-4 {
+  font-size: 60;
+}
+
+.text-5 {
+  font-size: 75;
+}
 
 /*# sourceMappingURL=style.css.map */
