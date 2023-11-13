@@ -127,9 +127,9 @@ criar o sistema de grade enquanto $x for menor que 13. Depois de definir a regra
 $x é incrementado em 1 para evitar um Loop infinito.
 */
 
-$x : 1;
+/*$x : 1;
 
 @while ($x<6) {
   .text-#{$x} {font-size: 15*$x;}
   $x: $x+1;
-}
+}*/
