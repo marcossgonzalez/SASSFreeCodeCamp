@@ -114,10 +114,22 @@ $colors: (color1: blue, color2: red, color3: green);
   }
 }
 */
+//$colors: (color1: blue, color2: black, color3: red);
+//@each $key, $color in $colors{
+//.#{"" + //$color}-bg {
+//background-color: $color;
+//}
+//}
+/*A diretiva @while é uma opção com funcionalidade semelhante ao loop while do JavaScript. 
+Ele cria regras CSS até que uma condição seja atendida.
+Primeiro, defina uma variável $x e defina-a como 1. Em seguida, use a diretiva @while para 
+criar o sistema de grade enquanto $x for menor que 13. Depois de definir a regra CSS para largura, 
+$x é incrementado em 1 para evitar um Loop infinito.
+*/
 
-$colors: (color1: blue, color2: black, color3: red);
-@each $key, $color in $colors{
-  .#{"" + $color}-bg {
-    background-color: $color !important;
-}
+$x : 1;
+
+@while ($x<6) {
+  .text-#{$x} {font-size: 15*$x;}
+  $x: $x+1;
 }

@@ -1,115 +1,17 @@
-@charset "UTF-8";
-/*.blog-post {
- h1 {
-   text-align: center;
-   color: blue;
- }
- p {
-   font-size: 20px;
- }
-}*/
-/*@mixin border-radius($radius){
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
+/* Error: expected "{".
+ *     ,
+ * 130 | @while $x<6
+ *     |            ^
+ *     '
+ *   sass\style.scss 130:12  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 130 \2502  @while $x<6\d\a     \2502             ^\a     \2575 \a   sass\\style.scss 130:12  root stylesheet';
 }
- #awesome {
-  width: 150px;
-  height: 150px;
-  background-color: green;
-  @include border-radius(15px);
-}*/
-/*
-@mixin box-shadow($x, $y, $blur, $c){ 
-  -webkit-box-shadow: $x $y $blur $c;
-  -moz-box-shadow: $x $y $blur $c;
-  -ms-box-shadow: $x $y $blur $c;
-  box-shadow: $x $y $blur $c;
-}
-
-A definição começa com @mixin seguido por um nome personalizado. Os parâmetros 
-($x, $y, $blur e $c no exemplo acima) são opcionais. Agora, sempre que uma regra 
-box-shadow for necessária, apenas uma única linha chamando o mixin substitui a 
-necessidade de digitar todos os prefixos do fornecedor. Um mixin é chamado com 
-a diretiva @include:*/
-/*A diretiva @if no Sass é útil para testar um caso específico - funciona exatamente como a instrução if em JavaScript.
-
-@mixin make-bold($bool) {
-  @if $bool == true {
-    font-weight: bold;
-  }
-}
-E assim como no JavaScript, as diretivas @else if e @else testam mais condições:
-
-@mixin text-effect($val) {
-  @if $val == danger {
-    color: red;
-  }
-  @else if $val == alert {
-    color: yellow;
-  }
-  @else if $val == success {
-    color: green;
-  }
-  @else {
-    color: black;
-  }
-}*/
-/*@mixin border-stroke($val){
-  @if $val == light{
-    border: 1px solid black;
-  }
-  @else if $val == medium{
-    border: 3px solid black;
-  }
-  @else if $val == heavy{
-    border: 6px solid black;
-  }
-  @else {
-    border: none;
-  }
-} 
-
-#box{
-  width: 150px;
-  height: 150px;
-  background-color: red;
-  @include border-stroke(medium);
-}*/
-/*
-@for é usado de duas maneiras: "do início ao fim" ou "do início ao fim". A principal diferença é 
-que “do início até o fim” exclui o número final como parte da contagem, e “do início ao fim” inclui o 
-número final como parte da contagem.
-Por exemplo:
-@for $i from 1 through 12 {
-  }
-} Aqui temos um código que conta do número 1 até o 12 ( incluso) 
-*/
-/*@for $i from 1 to 6{
-  //.text-i {font-size: $i*15}
-}*/
-/*
-Sass também oferece a diretiva @each que 
-percorre cada item de uma lista ou mapa. Em cada iteração, a variável é atribuída ao valor atual 
-da lista ou mapa.
-A sintaxe do map é um pouco diferente. Por exemplo:
-$colors: (color1: blue, color2: red, color3: green);
-
-@each $key, $color in $colors {
-  }
-}
-*/
-.blue-bg {
-  background-color: blue !important;
-}
-
-.black-bg {
-  background-color: black !important;
-}
-
-.red-bg {
-  background-color: red !important;
-}
-
-/*# sourceMappingURL=style.css.map */
