@@ -68,7 +68,7 @@ E assim como no JavaScript, as diretivas @else if e @else testam mais condiçõe
   }
 }*/
 
-@mixin border-stroke($val){
+/*@mixin border-stroke($val){
   @if $val == light{
     border: 1px solid black;
   }
@@ -88,4 +88,7 @@ E assim como no JavaScript, as diretivas @else if e @else testam mais condiçõe
   height: 150px;
   background-color: red;
   @include border-stroke(medium);
-}
+}*/
+/*
+@for é usado de duas maneiras: "do início ao fim" ou "do início ao fim". A principal diferença é 
+que “do início ao fim” exclui o número final como parte da contagem, e “do início ao fim” inclui o número final como parte da contagem.*/
