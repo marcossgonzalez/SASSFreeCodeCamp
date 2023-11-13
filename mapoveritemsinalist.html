@@ -9,3 +9,47 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 <div class="blue-bg"></div>
 <div class="black-bg"></div>
 <div class="red-bg"></div>
+
+<!--/*
+@for é usado de duas maneiras: "do início ao fim" ou "do início ao fim". A principal diferença é 
+que “do início até o fim” exclui o número final como parte da contagem, e “do início ao fim” inclui o 
+número final como parte da contagem.
+Por exemplo:
+@for $i from 1 through 12 {
+  }
+} Aqui temos um código que conta do número 1 até o 12 ( incluso) 
+*/
+/*@for $i from 1 to 6{
+  //.text-#{i} {font-size: $i*15}
+}*/
+
+/*
+Sass também oferece a diretiva @each que 
+percorre cada item de uma lista ou mapa. Em cada iteração, a variável é atribuída ao valor atual 
+da lista ou mapa.
+A sintaxe do map é um pouco diferente. Por exemplo:
+$colors: (color1: blue, color2: red, color3: green);
+
+@each $key, $color in $colors {
+  }
+}
+*/
+//$colors: (color1: blue, color2: black, color3: red);
+//@each $key, $color in $colors{
+//.#{"" + //$color}-bg {
+//background-color: $color;
+//}
+//}
+/*A diretiva @while é uma opção com funcionalidade semelhante ao loop while do JavaScript. 
+Ele cria regras CSS até que uma condição seja atendida.
+Primeiro, defina uma variável $x e defina-a como 1. Em seguida, use a diretiva @while para 
+criar o sistema de grade enquanto $x for menor que 13. Depois de definir a regra CSS para largura, 
+$x é incrementado em 1 para evitar um Loop infinito.
+*/
+
+/*$x : 1;
+
+@while ($x<6) {
+  .text-#{$x} {font-size: 15*$x;}
+  $x: $x+1;
+}*/-->
